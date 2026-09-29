@@ -153,7 +153,8 @@ a.service-card:hover { border-color: #000; }
 
 /* language switch (header) */
 .lang { display: flex; gap: 12px; font-size: 12px; letter-spacing: .1em; color: var(--ink-soft); }
-.lang a[aria-current] { border-bottom: 1px solid currentColor; }
+.lang a[aria-current] { border-bottom: none; font-weight: 600; }
+.lang a:not([aria-current]) { border-bottom: 1px solid currentColor; }
 .site-header .inner { gap: 16px 28px; }
 /* EN / RU: longer text */
 .lang-en .concept h1, .lang-ru .concept h1 { font-size: clamp(19px, 2.1vw, 27px); line-height: 1.75; letter-spacing: 0; }
